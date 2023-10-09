@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onclick="removesidebar()">
+ 
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="header">
+            <div class="header-container">
+                <h1>Baraiya <span>Darshan</span></h1>
+                <ul id="navbarmenu">
+                    <li><a href="#navbar" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark navfas" onclick="closenav()"></i>
+                </ul>
+                <i class="fa-solid fa-bars navfas" onclick="opennav()"></i>
+            </div>
+            <div class="header-txt">
+                <p>Front-End Developer</p>
+                <h1> Hello, I am <span>Baraiya Darshan</span> </h1>
+                <h2>From Gujrat</h2>
+            </div>
+        </div>
+    </nav>
+
+     <!-- custom scroll -->
+     <div id="customscroll"><a href="#navbar"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/aboutimg.jpg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Motivated and talented front-end
+                        developer with a strong foundation in
+                        HTML, CSS, Bootstrap and JavaScript. Seeking
+                        opportunities to grow and apply skills in
+                        creating user-friendly web experiences</p>
+
+                    <div class="about-detail">
+                        <p class="detail active-link " onclick="opentab('edu')"><i
+                                class="fa-solid fa-school"></i>Education</p>
+                        <p class="detail" onclick="opentab('skill')"><i class="fa-solid fa-crown"></i>Skills</p>
+                        <p class="detail" onclick="opentab('exp')"><i class="fa-solid fa-briefcase"></i>Experience</p>
+                    </div>
+
+                    <div class="about-text active-text" id="edu">
+                        <ul>
+                            <li>P.G.D.C.A.</li>BKNMU - 2023 <br> 84.50%
+                            <li>B.COM</li>BKNMU - 2022 <br> 67.87%
+                            <li>H.S.C</li>G.H.S.E.B - 2019 <br> 90.22 PR
+                            <li>S.S.C</li>G.S.E.B - 2017 <br> 97.13 PR
+                        </ul>
+                    </div>
+
+                    <div class="about-text" id="skill">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>PHP (Bacis)</li>
+                            <li>Oracle DB(Bacis)</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-text" id="exp">
+                        <ul>
+                            <li>I am fresher</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="portfolio-container">
+            <h1> My project</h1>
+
+            <div class="project-list">
+                <div class="project">
+                    <img src="img/project1.jpg" alt="project-image">
+                    <div class="project-text">
+                        <h2>Clothing E-Commerce Website</h2>
+                        <p>D Clothes: An elegant online fashion store blending HTML, CSS, and JavaScript for a seamless
+                            shopping experience. Explore trendy apparel and accessories with interactive features on our
+                            stylish website,This website is fully responsive .</p>
+                        <a href="https://enchanting-youtiao-00f872.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project2.jpg" alt="project-image">
+                    <div class="project-text">
+                        <h2>Organic Food Website using Bootstrap</h2>
+                        <p>I create an E-commerce website for an organic
+                            product shop, built using Bootstrap 5, HTML, CSS, and
+                            minor JavaScript. It allows users to watch organic
+                            products in a user-friendly interface. The frontend
+                            design is responsive and visually appealing, enhancing
+                            the overall shopping experience.
+                        </p>
+                        <a href="https://glistening-wisp-b9b59e.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project3.jpg" alt="project-image">
+                    <div class="project-text">
+                        <h2>Simple Portfolio Using Bootstrap</h2>
+                        <p>Discover my personal portfolio website, meticulously crafted using HTML, CSS, and Bootstrap
+                            5. Dive into my work, skills, and achievements through an engaging and responsive design,
+                            showcasing my professional journey and expertise.</p>
+                        <a href="https://64c4f2ec42477c5c4b67298a--shimmering-puppy-d22dc0.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn-project">SEE MORE</a>
+
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+         <div class="contact-container">
+             <div class="row">
+
+                <div class="left-contact">
+                      <h1>Contact Me</h1>
+                      <p>Email : baraiyadarshan05@gmail.com</p>
+                      <p>Mobile : 7202092891</p>
+                      <p>Current Address : <I>Maulik ville 2G8F+J8F, Bileshwar Mahadev Mandir Rd, Jodhpur Tekra, Ahmedabad, Gujarat 380015</I></p>
+                      <p>Perment Address : <I> At.-Nanadiya, Ta.-Manavadar, Dis.- Junagadh 362625</p>
+                      <div class="contact-icon">
+                            <a href="https://www.linkedin.com/in/darshan-baraiya-66788a279"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="
+                            https://instagram.com/iam_darshu_01?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/baraiya.darshan.56?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                      </div>
+                      <a href="img/Baraiya Darshan (Resume).pdf" download="" class="btn-project btn-cv">Download CV</a>
+                      
+                </div>
+
+                <div class="right-contact">
+                     <form action="">
+                         <input type="text" name="name" id="" placeholder="Enter your name" required>
+                         <input type="number" placeholder="Enter your number" >
+                         <input type="email" placeholder="abc@gamil.com" required>
+                         <textarea name="" id="" cols="30" rows="4" placeholder="Leave your Mesaage"></textarea>
+                         <input type="submit" value="Submit" class="btn-project btn-submit">
+                          
+                     </form>
+                </div>
+
+             </div>
+         </div>
+    </div>
+
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> copyright 2023 @ Baraiya Darshan </p>
+        <small >Thank you for visiting</small>
+     </div>
+
+    <!-- javascript -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
